@@ -5,7 +5,7 @@ defmodule StemEx.Mixfile do
     [
       # APP
       app: :stem_ex,
-      version: "0.0.1",
+      version: "0.0.2",
       elixir: "~> 1.3",
       escript: [main_module: StemEx.CLI],
       build_embedded: Mix.env == :prod,
@@ -20,7 +20,7 @@ defmodule StemEx.Mixfile do
       docs: [
         #logo: "/path/to/logo",
         cannonical: "https://hexdocs/stem_ex",
-        extras: ["README.md"]
+        extras: ["README.md", "CHANGELOG.md"]
       ]
     ]
   end
@@ -30,7 +30,7 @@ defmodule StemEx.Mixfile do
   end
 
   defp description do
-    "Implementation of the Porter stemming algorithm."
+    "Pure elixir implementation of the Porter stemming algorithm."
   end
 
   defp deps do

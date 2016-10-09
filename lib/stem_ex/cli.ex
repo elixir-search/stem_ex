@@ -1,5 +1,8 @@
 defmodule StemEx.CLI do
-  @moduledoc "Simple CLI - takes a word and returns the stemmed transformation"
+  @moduledoc """
+  Simple CLI - an escript that takes a word and returns the stemmed
+  transformation.  The escript name is `stem_ex` .
+  """
 
   @doc """
   Entry point for `stem_ex` executable.  Takes a single argument `argv`.

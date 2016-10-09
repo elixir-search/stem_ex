@@ -1,4 +1,4 @@
-# StemEx
+# StemEx Readme
 
 Porter stemming algorithm implementation in Elixir
 
@@ -14,14 +14,17 @@ quirk, the flipping the words allowed us to greatly simplify the rest of the
 coding, almost to the point of being a tedious translation of the textual
 description of the algorithm.
 
-References:
+## References
 
-* [Overview HTML](https://tartarus.org/martin/PorterStemmer                 )
-* [Overview Text](https://tartarus.org/martin/PorterStemmer/def.txt         )
-* [Test Input   ](https://tartarus.org/martin/PorterStemmer/voc.txt         )
-* [Test Output  ](https://tartarus.org/martin/PorterStemmer/output.txt      )
-* [Erlang App   ](https://tartarus.org/martin/PorterStemmer/porter.erl      )
-* [Erlang App   ](https://tartarus.org/martin/PorterStemmer/conditions.erl  )
+This implementation is based on an earlier [erlang
+implementation](https://tartarus.org/martin/PorterStemmer).
+
+* [Overview HTML        ](https://tartarus.org/martin/PorterStemmer               )
+* [Overview Text        ](https://tartarus.org/martin/PorterStemmer/def.txt       )
+* [Erlang Implementation](https://tartarus.org/martin/PorterStemmer/porter.erl    )
+* [Erlang Utilities     ](https://tartarus.org/martin/PorterStemmer/conditions.erl)
+* [Test Input           ](https://tartarus.org/martin/PorterStemmer/voc.txt       )
+* [Test Output          ](https://tartarus.org/martin/PorterStemmer/output.txt    )
 
 ## Installation
 
