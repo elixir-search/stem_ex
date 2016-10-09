@@ -3,17 +3,37 @@ defmodule StemEx do
   Porter stemming algorithm implementation in Elixir
   """
 
-  def stem(word) when length(word) > 2 do
-    reverse(word)
-    |> step1
-    |> step2
-    |> step3
-    |> step4
-    |> step5
-    |> reverse
-  end
+  import StemEx.Steps
 
+  @doc """
+  Stem function - takes a word and returns it's stemmed transformation.
 
-  def stem_file do
+  ## Examples
+  
+      iex> StemEx.stem("x")
+      "x"
+
+      iex> StemEx.stem("xy")
+      "xy"
+
+      iex> StemEx.stem("cats")
+      "cat"
+
+      iex> StemEx.stem("spotting")
+      "spot"
+  """
+  def stem(word) do
+    if String.length(word) > 2 do
+      word
+      |> String.reverse
+      |> step1
+      |> step2
+      |> step3
+      |> step4
+      |> step5
+      |> String.reverse
+    else
+      word
+    end
   end
 end

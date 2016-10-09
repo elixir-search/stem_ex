@@ -1,4 +1,7 @@
+/.idea
 /_build
+/doc
+/docs
 /cover
 /deps
 erl_crash.dump
