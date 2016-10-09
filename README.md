@@ -26,37 +26,31 @@ implementation](https://tartarus.org/martin/PorterStemmer).
 * [Test Input           ](https://tartarus.org/martin/PorterStemmer/voc.txt       )
 * [Test Output          ](https://tartarus.org/martin/PorterStemmer/output.txt    )
 
-## Installation
+## Escript Installation
 
-To install the escript:
+If you have Elixir 1.3+ enter this at the console:
 
-`mix escript.install https://raw.githubusercontent.com/andyl/stem_ex/master/stem_ex`
+<pre><sub>mix escript.install https://raw.githubusercontent.com/andyl/stem_ex/master/stem_ex</sub></pre>
 
-To install the package:
 
-  1. Add `stem_ex` to your list of dependencies in `mix.exs`:
+## Package Installation
 
-    From Hex:
+Add `stem_ex` to your list of dependencies in `mix.exs`:
 
-    ```elixir
-    def deps do
-      [{:stem_ex, "~> 0.0.1"}]
-    end
-    ```
+```elixir
+def deps do
+  [{:stem_ex, "~> 0.0.2"}]
+end
+```
 
-    From GitHub:
+Ensure `stem_ex` is started before your application:
 
-    ```elixir
-    def deps do
-      [{:stem_ex, git: "git://github.com/andyl/stem_ex.git"}]
-    end
-    ```
+```elixir
+def application do
+  [applications: [:stem_ex]]
+end
+```
 
-  2. Ensure `stem_ex` is started before your application:
+## Source
 
-    ```elixir
-    def application do
-      [applications: [:stem_ex]]
-    end
-    ```
-
+<https://github.com/andyl/stem_ex> 
