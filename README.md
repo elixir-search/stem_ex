@@ -14,15 +14,6 @@ quirk, the flipping the words allowed us to greatly simplify the rest of the
 coding, almost to the point of being a tedious translation of the textual
 description of the algorithm.
 
-References:
-
-* [Overview HTML](https://tartarus.org/martin/PorterStemmer                 )
-* [Overview Text](https://tartarus.org/martin/PorterStemmer/def.txt         )
-* [Test Input   ](https://tartarus.org/martin/PorterStemmer/voc.txt         )
-* [Test Output  ](https://tartarus.org/martin/PorterStemmer/output.txt      )
-* [Erlang App   ](https://tartarus.org/martin/PorterStemmer/porter.erl      )
-* [Erlang App   ](https://tartarus.org/martin/PorterStemmer/conditions.erl  )
-
 ## Installation
 
 To install the escript:
