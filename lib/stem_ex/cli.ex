@@ -7,8 +7,8 @@ defmodule StemEx.CLI do
   def main(argv) do
     case argv do
       [word]          -> IO.puts StemEx.stem(word)
-      []              -> usage
-      _               -> usage
+      []              -> usage()
+      _               -> usage()
     end
   end
 
@@ -21,11 +21,11 @@ defmodule StemEx.CLI do
   end
 
   defp usage do
-    IO.puts usage_message
+    IO.puts usage_message()
   end
 
   defp usage_message do
-    "USAGE: #{prog} <word>\n(#{prog} #{version})"
+    "USAGE: #{prog()} <word>\n(#{prog()} #{version()})"
   end
 end
 

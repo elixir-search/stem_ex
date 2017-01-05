@@ -7,10 +7,10 @@ defmodule StemEx.App do
   ## Example
 
       iex> StemEx.App.version
-      '0.0.1'
+      '0.0.2'
   """
   def version do
-    appsym = symbol
+    appsym = symbol()
     appver = fn
         [{_app, _desc, vsn}] -> vsn
         _                    -> "NA"
@@ -41,7 +41,7 @@ defmodule StemEx.App do
       "stem_ex"
   """
   def name do
-    Atom.to_string(symbol)
+    Atom.to_string(symbol())
   end
 end
 

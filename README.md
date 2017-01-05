@@ -16,9 +16,9 @@ description of the algorithm.
 
 ## Installation
 
-To install the escript:
+To install the escript (Elixir > 1.4):
 
-`mix escript.install https://raw.githubusercontent.com/andyl/stem_ex/master/stem_ex`
+`mix escript.install hex stem_ex`
 
 To install the package:
 
