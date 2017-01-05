@@ -16,7 +16,7 @@ description of the algorithm.
 
 ## Installation
 
-To install the escript (Elixir > 1.4):
+To install the escript (Elixir >= 1.4):
 
 `mix escript.install hex stem_ex`
 
@@ -28,7 +28,7 @@ To install the package:
 
     ```elixir
     def deps do
-      [{:stem_ex, "~> 0.0.1"}]
+      [{:stem_ex, "~> 0.0.2"}]
     end
     ```
 
